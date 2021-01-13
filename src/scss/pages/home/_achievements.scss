@@ -1,0 +1,46 @@
+#achievements-section {
+    z-index: 1;
+    background-color: $bg-color-L300;
+    padding-top: $wave-height;
+
+    .grid-container {
+        position: relative;
+        z-index: 10;
+    }
+
+    .section-wave-divider--bg-bottom {
+        bottom: -20px;
+        z-index: 1;
+    }
+
+    .quote {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+
+        // .quote__quote
+        &__icon {
+            width: 35px;
+        }
+
+        // .quote__msg
+        &__msg {
+            color: #443636;
+            font-size: 21px;
+            text-align: center;
+        }
+
+        // .quote__company
+        &__company {
+            height: 65px;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}

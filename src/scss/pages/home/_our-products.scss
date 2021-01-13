@@ -1,0 +1,49 @@
+#our-products-sections {
+    z-index: 5;
+    padding-top: $wave-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-color-L400;
+
+    .grid-container {
+        width: 100%;
+    }
+
+    .grid--header {
+        margin-bottom: 5rem;
+
+        .cell {
+            margin: 0 auto;
+        }
+
+        .section__header {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .prod-carousel {
+        width: 100%;
+    }
+
+    .grid-x--main {
+        .cell {
+            margin: 0 auto;
+        }
+    }
+
+    .grid-x--thumbs {
+        min-height: 200px;
+
+        .thumb-slide {
+            margin: 0 1rem;
+            width: 100%;
+            max-width: calc(#{percentage(1/8)} - 2rem);
+        }
+    }
+
+    .section-wave-divider--bottom svg path {
+        fill: $bg-color-L400;
+    }
+}
