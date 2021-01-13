@@ -17,20 +17,38 @@ $border-color: #443636;
     }
 
     // .plate-anim__hemp
-    &__hemp {
-        @extend %absoluteFill;
-        clip-path: inset( 0 50% 0 0 );
+    // .plate-anim__gummies
+    &__hemp ,
+    &__gummies {
+        position: absolute;
+        top: 0;
         z-index: 10;
+        height: 100%;
+        overflow: hidden;
 
+        img {
+            max-width: unset;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+
+    // .plate-anim__hemp
+    &__hemp {
+        left: 0;
+        img {
+            left: 0;
+        }
     }
 
     // .plate-anim__gummies
     &__gummies {
-        @extend %absoluteFill;
-        clip-path: inset( 0 0 0 50% );
-        z-index: 10;
+        right: 0;
         img {
+            right: 0;
             transform: scale(0.8);
+            object-position: right;
         }
     }
 
