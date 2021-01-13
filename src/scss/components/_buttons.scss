@@ -1,0 +1,26 @@
+.button ,button {
+    border-radius: .5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button--floating {
+    box-shadow: 0 2px 5px 2px rgba(#000, .15);
+}
+
+.button--emphasize {
+    font-size: 16px;
+    height: 57px;
+    width: 225px;
+}
+
+@each $name,$value in $btn-colors {
+    .#{$name}-button {
+        background-color: $value;
+        color: determine-text-color($value);
+        &:hover {
+            background-color: $value;
+        }
+    }
+}

@@ -1,7 +1,6 @@
 @charset 'utf-8';
-
-@import '../../node_modules/foundation-sites/scss/foundation';
-@include foundation-everything;
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@800&family=Open+Sans:wght@400;600&display=swap');
 
 // ========================
 // PLUGINS
@@ -17,13 +16,17 @@
 // ========================
 @import 'common/index';
 
+// ========================
+// COMPONENTS
+// ========================
+@import 'components/index';
+
+// ========================
+// PAGES
+// ========================
+@import 'pages/index';
 
 
-.main-carousel {
-    width: 100%;
-    .carousel-cell {
-        height: 500px;
-        width: 100%;
-        background-color: $primary-color;
-    }
-}
+
+
+

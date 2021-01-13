@@ -166,10 +166,10 @@ gulp.task('browserSync', function() {
 });
 
 
-gulp.task('css', () => { css(true, 'src/css/**/*.css','dist/css') });
-gulp.task('scss', () => { scss(true, 'src/scss/**/*.scss','dist/css') });
-gulp.task('js-dependency', () => { jsDependency(true, 'src/js/dependency/**/*.js','dist/js') });
-gulp.task('js-project', () => { jsProject(true, 'src/js/project/**/*.js','dist/js') });
+gulp.task('css', () => { css(true, 'src/css/**/*.css','app/css') });
+gulp.task('scss', () => { scss(true, 'src/scss/**/*.scss','app/css') });
+gulp.task('js-dependency', () => { jsDependency(true, 'src/js/dependency/**/*.js','app/js') });
+gulp.task('js-project', () => { jsProject(true, 'src/js/project/**/*.js','app/js') });
 gulp.task('default', [
   'browserSync'
   , 'css'
@@ -181,7 +181,7 @@ gulp.task('default', [
   gulp.watch('src/scss/**/*.scss', ['scss']);
   gulp.watch('src/js/dependency/**/*.js', ['js-dependency']);
   gulp.watch('src/js/project/**/*.js', ['js-project']);
-  gulp.watch('dist/**/*.html', browserSync.reload);
+  gulp.watch('app/**/*.html', browserSync.reload);
 });
 
 

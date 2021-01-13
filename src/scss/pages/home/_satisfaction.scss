@@ -1,0 +1,76 @@
+#satisfaction-section {
+    z-index: 1;
+    background-color: $bg-color-L200;
+
+    .cell--info {
+        padding-top: $wave-height / 1.2;
+        padding-bottom: $wave-height / 1.2;
+    }
+
+    .cell--hand-oil {
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    .section__header {
+        margin-bottom: 3rem;
+    }
+
+    .grid-x {
+        align-items: stretch;
+    }
+
+    .pill-card {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 4rem;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem 1rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        // .pill-card__icon
+        &__icon {
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+
+        // .pill-card__info
+        &__info {
+            flex-grow: 1;
+            padding-left: 2rem;
+        }
+
+        // .pill-card__title
+        &__title {
+            margin-top: 0;
+            font-weight: 500;
+            font-size: 21px;
+            color: $header-color;
+            margin-bottom: 0.5rem;
+        }
+
+        // .pill-card__desc
+        &__desc {
+            margin-bottom: 0;
+            margin-top: 0;
+            color: $text-color-dark-200;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.home-page {
+    section {
+        position: relative;
+        min-height: 100vh;
+        .section__header {
+            font-size: 40px;
+        }
+        .section__headerlabel {
+            color: $text-color;
+            font-weight: 500;
+            font-size: 21px;
+        }
+        .section__subheader {
+            font-size: 18px;
+        }
+
+    }
+
+    .section-wave-divider {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+        // .section-wave-divider--top
+        &--top {
+            bottom: calc(100% - #{$wave-offset});
+        }
+
+        // .section-wave-divider--bottom
+        &--bottom {
+            top: calc(100% - #{$wave-offset});
+            .divider-wave {
+                display: block;
+                transform: scaleY(-1) scaleX(-1);
+            }
+        }
+    }
+}

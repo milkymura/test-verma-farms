@@ -1,0 +1,29 @@
+
+#hero-section {
+    background-color: $bg-color;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../images/homepage/homepage-bg.png');
+    background-position: center;
+    background-size: cover;
+
+
+    .grid-container {
+        width: 100%;
+    }
+
+    .hero-section__header {
+        font-size: 3.25rem;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .hero-section__desc {
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+    }
+}

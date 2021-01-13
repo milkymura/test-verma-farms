@@ -1,0 +1,43 @@
+#how-it-works {
+    z-index: 10;
+    min-height: 0;
+    background-color: $bg-color-L300;
+
+    .palm-accent {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        background-size: contain;
+        pointer-events: none;
+        height: 500px;
+        width: 500px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .palm-accent--left {
+        top: -20vh;
+        left: 0;
+        img {
+            object-position: top left;
+        }
+    }
+
+    .palm-accent--right {
+        bottom: 0;
+        right: 0;
+
+        img {
+            object-position: bottom right;
+        }
+    }
+
+    .grid-container {
+        position: relative;
+        z-index: 50;
+    }
+}

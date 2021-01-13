@@ -1,0 +1,13 @@
+h1,h2,h3,h4,h5,h6,p,a, button, input {
+    font-family: $font-family;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $header-color;
+    font-weight: 900;
+}
+
+
+p, a {
+    color: $text-color;
+}

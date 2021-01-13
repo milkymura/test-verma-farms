@@ -1,0 +1,91 @@
+#about-cbd-section {
+    z-index: 10;
+    padding-top: $wave-height;
+
+    .grid--header {
+        margin-bottom: 4rem;
+        .cell {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .section-wave-divider--bottom svg path {
+        fill: $white !important;
+    }
+}
+
+.about-cbd-section {
+    // .about-cbd-section__img-accent
+    &__img-accent {
+        width: 60px;
+        margin-bottom: 2rem;
+    }
+
+
+    // .about-cbd-section__header
+    &__header {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+
+    // .about-cbd-section__desc
+    &__desc {
+        width: 80%;
+        font-size: 18px;
+    }
+}
+
+// ========================
+// CBD FACT
+// ========================
+.cbd-fact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    // .cbd-fact__img
+    &__img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    // .cbd-fact__title
+    &__title {
+        font-size: 17px;
+        width: 100%;
+        text-align: center;
+        line-height: 2;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        color: $header-color;
+
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 80%;
+            height: 2px;
+            display: block;
+            margin: 0 auto;
+            background-color: $primary-color-100;
+        }
+    }
+
+    // .cbd-fact__desc
+    &__desc {
+        color: $text-color-dark-100;
+    }
+}
+
+
