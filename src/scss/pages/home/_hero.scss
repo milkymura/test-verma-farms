@@ -13,6 +13,8 @@
 
     .grid-container {
         width: 100%;
+        position: relative;
+        z-index: 10;
     }
 
     .hero-section__header {
@@ -25,5 +27,41 @@
     .hero-section__desc {
         font-size: 1.25rem;
         margin-bottom: 3rem;
+    }
+
+    .grid-accents {
+        @extend %absoluteFill;
+        pointer-events: none;
+        z-index: 1;
+
+        img {
+            position: absolute;
+            width: 70px;
+        }
+
+        .plant-1 {
+            right: 0;
+            bottom: 40%;
+        }
+
+        .plant-2 {
+            left: 0;
+            bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 40em) {
+    #hero-section {
+        background-color: $bg-color;
+        background-image: url('../images/homepage/homepage-bg-mobile.png');
+
+        .hero-section__header {
+            font-size: 33px;
+        }
+
+        .cell--info {
+            text-align: center;
+        }
     }
 }

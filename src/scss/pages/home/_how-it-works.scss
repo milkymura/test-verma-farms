@@ -41,3 +41,18 @@
         z-index: 50;
     }
 }
+
+@media (max-width: 40em) {
+    #how-it-works-section {
+        .palm-accent {
+            width: 100px;
+        }
+        .palm-accent--right {
+            bottom: -50%;
+        }
+
+        .cell--info {
+            text-align: center;
+        }
+    }
+}

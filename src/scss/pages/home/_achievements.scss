@@ -44,3 +44,12 @@
         }
     }
 }
+
+@media (max-width: 40em) {
+    #achievements-section {
+        padding-top: 100px;
+        .cell--plant {
+            order: 3
+        }
+    }
+}

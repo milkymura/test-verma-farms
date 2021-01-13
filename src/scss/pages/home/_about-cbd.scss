@@ -88,4 +88,30 @@
     }
 }
 
+.cell-about-sm-screen {
+    margin-top: 3rem;
+    width: 100%;
+    .card-carousel {
+        width: 100%;
 
+        .flickity-page-dots .dot {
+            background-color: $primary-color;
+        }
+    }
+
+    .button {
+        display: flex;
+        margin: 4rem auto 2rem;
+    }
+}
+
+@media (max-width: 40em) {
+    #about-cbd-section {
+        padding-top: 100px;
+
+        .cbd-fact {
+            padding: 0 3rem;
+        }
+    }
+
+}

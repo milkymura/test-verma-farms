@@ -103,11 +103,24 @@ function doPlateSlider() {
       tweenChanges: true
     })
         .setTween(plateAnimation)
-        .addIndicators({name: "TESTING"})
+        // .addIndicators({name: "TESTING"})
         .addTo(controller);
 }
 
+function cardCarousel() {
+    const $cardCarousel = $('.card-carousel')
+
+    $cardCarousel.flickity({
+        imagesLoaded: true ,
+        adaptiveHeight: true ,
+        prevNextButtons: false ,
+        contain: 3,
+        pageDots: true
+    })
+}
+
 function homePage() {
+    cardCarousel()
     doPlateSlider()
     productsSection()
     testimonialSection()

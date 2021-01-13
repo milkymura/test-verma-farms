@@ -61,3 +61,23 @@
         line-height: 1;
     }
 }
+
+@media (max-width: 40em) {
+    .prod-slide__container {
+        flex-direction: column;
+    }
+
+    .prod-slide__media {
+        height: 250px;
+    }
+
+    .prod-slide__media ,
+    .prod-slide__info ,
+    .prod-slide__view {
+        width: 100%;
+    }
+
+    .prod-slide__view {
+        max-width: 100%;
+    }
+}

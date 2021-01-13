@@ -53,6 +53,7 @@
 
         // .pill-card__info
         &__info {
+            text-align: left;
             flex-grow: 1;
             padding-left: 2rem;
         }
@@ -71,6 +72,17 @@
             margin-bottom: 0;
             margin-top: 0;
             color: $text-color-dark-200;
+        }
+    }
+}
+@media (max-width: 40em) {
+    #satisfaction-section{
+        padding-top: 200px;
+        padding-bottom: 200px;
+        .cell--info {
+            padding-top: 0;
+            padding-bottom: 0;
+            text-align: center;
         }
     }
 }

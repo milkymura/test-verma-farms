@@ -1,3 +1,10 @@
 .divider-wave {
     height: $wave-height;
+
+    @media (max-width: 40em) {
+        height: 150px;
+        svg {
+            height: 150px;
+        }
+    }
 }

@@ -47,3 +47,20 @@
         fill: $bg-color-L400;
     }
 }
+
+@media (max-width: 40em) {
+    #our-products-sections{
+        padding-top: 100px;
+
+        .grid--header {
+            margin-bottom: 0;
+        }
+
+        .grid-x--main .cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
